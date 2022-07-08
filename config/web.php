@@ -47,19 +47,10 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing' => true,
-            // 'suffix' => '/',
             'rules' => [
                 '/' => 'site/index',
                 'site/<action:\w+>' => 'site/<action>',
-                // '<controller>/' => '<controller>/index',
-                // !! '/<link:\w+>' => '/site/list',
                 '/<hash:\w+>' => '/urls/redirect',
-                
-                // '/<login:\w+>/list' => '/site/list'
-                // '/<\w+>' => 'urls/index',
-                // 'defaultRoute' => 'urls/index',
-                // '<controller:\w+>/<action:(\w|-)+>' => 'urls/index'
-
             ],
         ],
     ],
