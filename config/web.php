@@ -48,9 +48,9 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => true,
             'rules' => [
-                '/' => 'site/index',
+                '/' => 'site/urls',
                 'site/<action:\w+>' => 'site/<action>',
-                '/<hash:\w+>' => '/urls/redirect',
+                '/<hash:\w+>' => '/urls/connect',
             ],
         ],
     ],

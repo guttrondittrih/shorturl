@@ -21,9 +21,6 @@ class ShortUrlsAlias extends \yii\db\ActiveRecord
         return 'short_urls_alias';
     }
 
-//    public $link;
-//    public $hash;
-
     /**
      * {@inheritdoc}
      */

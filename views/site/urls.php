@@ -43,12 +43,12 @@ $this->registerJs($js);
             <div class="col-lg-5">
 
                 <?php $form = ActiveForm::begin(['id' => 'link-form']); ?>
-                    <?= $form->field($model, 'link')->textInput(['autofocus' => true]) ?>
+                    <?= $form->field($model, 'link')->textInput(['autofocus' => true])->label('Ссылка') ?>
                     <div class="form-group">
-                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'link-form']) ?>
+                        <?= Html::submitButton('Получить короткую ссылку', ['class' => 'btn btn-primary', 'name' => 'link-form']) ?>
                     </div>
                 <?php ActiveForm::end(); ?>
-                <a href="" id="conteiner">_</a>
+                <a href="#" id="conteiner">Введите в поле ссылка url адрес</a>
             </div>
         </div>
 </div>
